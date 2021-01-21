@@ -1,11 +1,5 @@
 @{
-    ModuleVersion = '1.0'
-    RootModule = '.\TestStoreImplementation.dll'
-    NestedModules = @('.\TestVault.Extension')
-    CmdletsToExport = @('Set-TestStoreConfiguration','Get-TestStoreConfiguration')
-    PrivateData = @{
-        PSData = @{
-            Tags = @('SecretManagement')
-        }
-    }
+    ModuleVersion = '0.0.1'
+    RootModule = '.\SecretManagement.CSV.Extension.psm1'
+    FunctionsToExport = @('Set-Secret','Get-Secret','Remove-Secret','Get-SecretInfo','Test-SecretVault')
 }
